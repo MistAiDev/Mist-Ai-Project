@@ -1,12 +1,12 @@
 # Eliza Documentation Site
 
-This the official documentation site of eliza. A flexible, scalable and customizable agent for production apps. which Comes with batteries-including database, deployment and examples using Supabase and Cloudflare.
+This the official documentation site of mist. A flexible, scalable and customizable agent for production apps. which Comes with batteries-including database, deployment and examples using Supabase and Cloudflare.
 
 ### Installation
 
-Currently eliza is dependent on Supabase for local development. You can install it with the following command:
+Currently mist is dependent on Supabase for local development. You can install it with the following command:
 
-    pnpm install eliza
+    pnpm install mist
 
 # Select your database adapter
 
@@ -29,9 +29,9 @@ OPENAI_API_KEY="your-openai-api-key"
 
 ### SQLite Local Setup (Easiest)
 
-You can use SQLite for local development. This is the easiest way to get started with eliza.
+You can use SQLite for local development. This is the easiest way to get started with mist.
 
-    import { AgentRuntime, SqliteDatabaseAdapter } from "eliza";
+    import { AgentRuntime, SqliteDatabaseAdapter } from "mist";
     import { Database } from "sqlite3";
     const sqliteDatabaseAdapter = new SqliteDatabaseAdapter(new Database(":memory:"));
 
@@ -55,7 +55,7 @@ Once you have the CLI installed, you can run the following commands to set up a 
 supabase start
 ```
 
-You can now start the eliza project with `pnpm run dev` and it will connect to the local Supabase instance by default.
+You can now start the mist project with `pnpm run dev` and it will connect to the local Supabase instance by default.
 
 NOTE: You will need Docker installed for this to work. If that is an issue for you, use the Supabase Cloud Setup instructions instead below).
 
