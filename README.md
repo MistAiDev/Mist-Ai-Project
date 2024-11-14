@@ -122,4 +122,4 @@ pnpm run shell # start the shell in another terminal to talk to the default agen
 
 ### what next?
 
-it is good to interact with the mist and read more about the documentation on https://www.mist.org/docs
+it is good to interact with the mist and read more about the documentation on https://x.com/MistAiSolana
