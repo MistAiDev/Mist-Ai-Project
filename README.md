@@ -2,7 +2,6 @@
 
 
 
-_As seen powering [@DegenSpartanAI](https://x.com/degenspartanai) and [@MarcAIndreessen](https://x.com/pmairca)_
 
 -   Multi-agent simulation framework
 -   Add as many unique characters as you want with [characterfile](https://github.com/lalalune/characterfile/)
