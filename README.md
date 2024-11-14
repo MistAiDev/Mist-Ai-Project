@@ -68,7 +68,7 @@ This library uses Supabase as a database. You can set up a free account at supab
 - Step 3: Select “Create New Project”.
 - Step 4: Wait for the database to setup. This will take a few minutes as supabase setups various directories.
 - Step 5: Select the “SQL Editor” tab from the left navigation menu.
-- Step 6: Copy in your own SQL dump file or optionally use the provided file in the eliza directory at: "src/supabase/db.sql". Note: You can use the command "supabase db dump" if you have a pre-exisiting supabase database to generate the SQL dump file.
+- Step 6: Copy in your own SQL dump file or optionally use the provided file in the mist directory at: "src/supabase/db.sql". Note: You can use the command "supabase db dump" if you have a pre-exisiting supabase database to generate the SQL dump file.
 - Step 7: Paste the SQL code into the SQL Editor and hit run in the bottom right.
 - Step 8: Select the “Databases” tab from the left navigation menu to verify all of the tables have been added properly.
 
@@ -76,7 +76,7 @@ Once you've set up your Supabase project, you can find your API key by going to 
 
 ### Local Model Setup
 
-While eliza uses ChatGPT 3.5 by default, you can use a local model by setting the serverUrl to a local endpoint. The LocalAI project is a great way to run a local model with a compatible API endpoint.
+While mist uses ChatGPT 3.5 by default, you can use a local model by setting the serverUrl to a local endpoint. The LocalAI project is a great way to run a local model with a compatible API endpoint.
 
     const runtime = new AgentRuntime({
       serverUrl: process.env.LOCALAI_URL,
@@ -94,7 +94,7 @@ pnpm run shell # start the shell in another terminal to talk to the default agen
 
 ### Usage
 
-      import { AgentRuntime, SupabaseDatabaseAdapter, SqliteDatabaseAdapter } from "eliza";
+      import { AgentRuntime, SupabaseDatabaseAdapter, SqliteDatabaseAdapter } from "mist";
 
       const sqliteDatabaseAdapter = new SqliteDatabaseAdapter(new Database(":memory:"));
 
@@ -122,4 +122,4 @@ pnpm run shell # start the shell in another terminal to talk to the default agen
 
 ### what next?
 
-it is good to interact with the eliza and read more about the documentation on https://www.eliza.org/docs
+it is good to interact with the mist and read more about the documentation on https://www.mist.org/docs
