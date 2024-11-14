@@ -1,4 +1,4 @@
-# Eliza Documentation Site
+# Mist Documentation Site
 
 This the official documentation site of mist. A flexible, scalable and customizable agent for production apps. which Comes with batteries-including database, deployment and examples using Supabase and Cloudflare.
 
