@@ -1,6 +1,6 @@
-# Eliza
+# Mist
 
-<img src="./docs/static/img/eliza_banner.jpg" alt="Eliza Banner" width="100%" />
+
 
 _As seen powering [@DegenSpartanAI](https://x.com/degenspartanai) and [@MarcAIndreessen](https://x.com/pmairca)_
 
@@ -9,7 +9,7 @@ _As seen powering [@DegenSpartanAI](https://x.com/degenspartanai) and [@MarcAInd
 -   Full-featured Discord and Twitter connectors, with Discord voice channel support
 -   Full conversational and document RAG memory
 -   Can read links and PDFs, transcribe audio and videos, summarize conversations, and more
--   Highly extensible - create your own actions and clients to extend Eliza's capabilities
+-   Highly extensible - create your own actions and clients to extend Mists's capabilities
 -   Supports open source and local models (default configured with Nous Hermes Llama 3.1B)
 -   Supports OpenAI for cloud inference on a light-weight device
 -   "Ask Claude" mode for calling Claude on more complex queries
@@ -39,11 +39,11 @@ pnpm i
 pnpm start
 ```
 
-# Customising Eliza
+# Customising Mist
 
 ### Adding custom actions
 
-To avoid git clashes in the core directory, we recommend adding custom actions to a `custom_actions` directory and then adding them to the `elizaConfig.yaml` file. See the `elizaConfig.example.yaml` file for an example.
+To avoid git clashes in the core directory, we recommend adding custom actions to a `custom_actions` directory and then adding them to the `mistConfig.yaml` file. See the `mistConfig.example.yaml` file for an example.
 
 ## Running with different models
 
