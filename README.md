@@ -1,6 +1,6 @@
 # Welcome To Mist
 
-![Logo](mist.jpg)
+![Logo](misty.jpg)
 
 # Mist
 
