@@ -1,8 +1,8 @@
-# Welcome To Cloud
+# Welcome To Misty
 
 ![Logo](mistpfp.jpg)
 
-# Cloud
+# Misty
 
 
 
@@ -12,9 +12,9 @@
 -   Full-featured Discord and Twitter connectors, with Discord voice channel support
 -   Full conversational and document RAG memory
 -   Can read links and PDFs, transcribe audio and videos, summarize conversations, and more
--   Highly extensible - create your own actions and clients to extend Clouds's capabilities
+-   Highly extensible - create your own actions and clients to extend Mistys's capabilities
 -   Supports open source and local models (default configured with Nous Hermes Llama 3.1B)
--   Supports OpenAI for cloud inference on a light-weight device
+-   Supports OpenAI for misty inference on a light-weight device
 -   "Ask Claude" mode for calling Claude on more complex queries
 -   100% Typescript
 
@@ -42,7 +42,7 @@ pnpm i
 pnpm start
 ```
 
-# Customising Cloud
+# Customising Misty
 
 ### Adding custom actions
 
@@ -173,15 +173,15 @@ Tests are written using Jest and can be found in `src/**/*.test.ts` files. The t
 To create new tests, add a `.test.ts` file adjacent to the code you're testing.
 
 
-# Cloud Documentation Site
+# Misty Documentation Site
 
-This the official documentation site of cloud. A flexible, scalable and customizable agent for production apps. which Comes with batteries-including database, deployment and examples using Supabase and Cloudflare.
+This the official documentation site of misty. A flexible, scalable and customizable agent for production apps. which Comes with batteries-including database, deployment and examples using Supabase and Cloudflare.
 
 ### Installation
 
-Currently cloud is dependent on Supabase for local development. You can install it with the following command:
+Currently misty is dependent on Supabase for local development. You can install it with the following command:
 
-    pnpm install cloud
+    pnpm install misty
 
 # Select your database adapter
 
@@ -204,9 +204,9 @@ OPENAI_API_KEY="your-openai-api-key"
 
 ### SQLite Local Setup (Easiest)
 
-You can use SQLite for local development. This is the easiest way to get started with cloud.
+You can use SQLite for local development. This is the easiest way to get started with misty.
 
-    import { AgentRuntime, SqliteDatabaseAdapter } from "cloud";
+    import { AgentRuntime, SqliteDatabaseAdapter } from "misty";
     import { Database } from "sqlite3";
     const sqliteDatabaseAdapter = new SqliteDatabaseAdapter(new Database(":memory:"));
 
@@ -230,11 +230,11 @@ Once you have the CLI installed, you can run the following commands to set up a 
 supabase start
 ```
 
-You can now start the cloud project with `pnpm run dev` and it will connect to the local Supabase instance by default.
+You can now start the misty project with `pnpm run dev` and it will connect to the local Supabase instance by default.
 
-NOTE: You will need Docker installed for this to work. If that is an issue for you, use the Supabase Cloud Setup instructions instead below).
+NOTE: You will need Docker installed for this to work. If that is an issue for you, use the Supabase Misty Setup instructions instead below).
 
-### Supabase Cloud Setup
+### Supabase Misty Setup
 
 This library uses Supabase as a database. You can set up a free account at supabase.io and create a new project.
 
@@ -243,7 +243,7 @@ This library uses Supabase as a database. You can set up a free account at supab
 - Step 3: Select “Create New Project”.
 - Step 4: Wait for the database to setup. This will take a few minutes as supabase setups various directories.
 - Step 5: Select the “SQL Editor” tab from the left navigation menu.
-- Step 6: Copy in your own SQL dump file or optionally use the provided file in the cloud directory at: "src/supabase/db.sql". Note: You can use the command "supabase db dump" if you have a pre-exisiting supabase database to generate the SQL dump file.
+- Step 6: Copy in your own SQL dump file or optionally use the provided file in the misty directory at: "src/supabase/db.sql". Note: You can use the command "supabase db dump" if you have a pre-exisiting supabase database to generate the SQL dump file.
 - Step 7: Paste the SQL code into the SQL Editor and hit run in the bottom right.
 - Step 8: Select the “Databases” tab from the left navigation menu to verify all of the tables have been added properly.
 
@@ -251,7 +251,7 @@ Once you've set up your Supabase project, you can find your API key by going to 
 
 ### Local Model Setup
 
-While cloud uses ChatGPT 3.5 by default, you can use a local model by setting the serverUrl to a local endpoint. The LocalAI project is a great way to run a local model with a compatible API endpoint.
+While misty uses ChatGPT 3.5 by default, you can use a local model by setting the serverUrl to a local endpoint. The LocalAI project is a great way to run a local model with a compatible API endpoint.
 
     const runtime = new AgentRuntime({
       serverUrl: process.env.LOCALAI_URL,
@@ -269,7 +269,7 @@ pnpm run shell # start the shell in another terminal to talk to the default agen
 
 ### Usage
 
-      import { AgentRuntime, SupabaseDatabaseAdapter, SqliteDatabaseAdapter } from "cloud";
+      import { AgentRuntime, SupabaseDatabaseAdapter, SqliteDatabaseAdapter } from "misty";
 
       const sqliteDatabaseAdapter = new SqliteDatabaseAdapter(new Database(":memory:"));
 
@@ -295,6 +295,3 @@ pnpm run shell # start the shell in another terminal to talk to the default agen
         embeddingModel: "text-embedding-3-small", // whatever model you want to use
       });
 
-### what next?
-
-it is good to interact with the cloud and read more about the documentation on https://x.com/CloudLLM
